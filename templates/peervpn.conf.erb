@@ -1,0 +1,27 @@
+## ******************************
+## * PeerVPN configuration file *
+## ******************************
+##
+##  MANAGED BY PUPPET CHANGES TO THIS FILE IT WILL BE OVERRIDDEN
+##
+networkname <%= @networkname %>
+psk <%= @psk %>
+<% if @initpeers %>initpeers <%= @initpeers.join(' ') %><% end %>
+enabletunneling <%= @enabletunneling %>
+<% if @interface %>interface <%= @interface %><% end %>
+<% if @ifconfig4 %>ifconfig4 <%= @ifconfig4 %><% end %>
+<% if @ifconfig6 %>ifconfig6 <%= @ifconfig6 %><% end %>
+<% if @upcmd %>upcmd <%= @upcmd %><% end %>
+<% if @local %>local <%= @local %><% end %>
+port <%= @port %>
+<% if @sockmark %>sockmark <%= @sockmark %><% end %>
+<% if @enableipv4 %>enableipv4 <%= @enableipv4 %><% end %>
+<% if @enableipv6 %>enableipv6 <%= @enableipv6 %><% end %>
+<% if @enablenat64clat %>enablenat64clat <%= @enablenat64clat %><% end %>
+<% if @enablendpcache %>enablendpcache <%= @enablendpcache %><% end %>
+<% if @enablerelay %>enablerelay <%= @enablerelay %><% end %>
+<% if @engine %>engine <%= @engine %><% end %>
+<% if @enableprivdrop %>enableprivdrop <%= @enableprivdrop %><% end %>
+<% if @user %>user <%= @user %><% end %>
+<% if @group %>group <%= @group %><% end %>
+<% if @chroot %>chroot <%= @chroot %><% end %>
