@@ -19,7 +19,7 @@ define peervpn::network (
   $enableprivdrop  = 'no',
   $user            = 'nobody',
   $group           = 'nogroup',
-  $chroot          = '/var/run/peervpn/chroot',
+  $chroot          = '/run/peervpn',
   $cfgdir          = '/etc/peervpn',
 ) {
   include ::peervpn
